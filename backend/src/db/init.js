@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 export function initDatabase() {
+  // eslint-disable-next-line no-undef
   const DATABASE_URL = process.env.DATABASE_URL;
 
   mongoose.connection.on('open', () => {

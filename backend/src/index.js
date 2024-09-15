@@ -6,6 +6,7 @@ import { initDatabase } from './db/init.js';
 
 try {
   await initDatabase();
+  // eslint-disable-next-line no-undef
   const PORT = process.env.PORT;
   app.listen(PORT, () =>
     console.info(`express server running on http://localhost:${PORT}`)
